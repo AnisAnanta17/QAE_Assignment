@@ -1,0 +1,138 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt; <br/>
+  &lt;link type="text/css" rel="stylesheet" href="/Generator.css"&gt; <br/>
+  &lt;title&gt;QR Code Generator from the ZXing Project&lt;/title&gt; <br/>
+  &lt;script type="text/javascript" language="javascript" src="/generator/generator.nocache.js"&gt;&lt;/script&gt;<br/>
+  &lt;link rel="stylesheet" href="http://zxing.appspot.com/generator/gwt/clean/clean.css"&gt;<br/>
+  &lt;script src="http://zxing.appspot.com/generator/E7FDF1C13BF167BFB051A132FC4D7697.cache.js"&gt;&lt;/script&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body&gt; &lt;iframe src="javascript:''" id="__gwt_historyFrame" tabindex="-1" style="position:absolute;width:0;height:0;border:0"&gt;&lt;/iframe&gt; <br/>
+  &lt;noscript&gt; <br/>
+   &lt;div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif"&gt;<br/>
+     Your web browser must have JavaScript enabled in order for this application to display correctly. <br/>
+   &lt;/div&gt; <br/>
+  &lt;/noscript&gt; <br/>
+  &lt;div id="header"&gt; <br/>
+   &lt;h1&gt;QR Code Generator &lt;span&gt;from the ZXing Project&lt;/span&gt;&lt;/h1&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;div id="ui"&gt;<br/>
+   &lt;table cellspacing="0" cellpadding="0" id="mainpanel"&gt;<br/>
+    &lt;tbody&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td align="left" style="vertical-align: top;"&gt;<br/>
+       &lt;table id="leftpanel"&gt;<br/>
+        &lt;colgroup&gt;<br/>
+         &lt;col&gt;<br/>
+        &lt;/colgroup&gt;<br/>
+        &lt;tbody&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td&gt;<br/>
+           &lt;table&gt;<br/>
+            &lt;colgroup&gt;<br/>
+             &lt;col class="firstColumn"&gt;<br/>
+             &lt;col class="secondColumn"&gt;<br/>
+            &lt;/colgroup&gt;<br/>
+            &lt;tbody&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;Contents&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;select class="gwt-ListBox"&gt;&lt;option value="Calendar event"&gt;Calendar event&lt;/option&gt;&lt;option value="Contact information"&gt;Contact information&lt;/option&gt;&lt;option value="Email address"&gt;Email address&lt;/option&gt;&lt;option value="Geo location"&gt;Geo location&lt;/option&gt;&lt;option value="Phone number"&gt;Phone number&lt;/option&gt;&lt;option value="SMS"&gt;SMS&lt;/option&gt;&lt;option value="Text"&gt;Text&lt;/option&gt;&lt;option value="URL"&gt;URL&lt;/option&gt;&lt;option value="Wifi network"&gt;Wifi network&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td&gt;<br/>
+           &lt;table&gt;<br/>
+            &lt;colgroup&gt;<br/>
+             &lt;col class="firstColumn"&gt;<br/>
+             &lt;col class="secondColumn"&gt;<br/>
+            &lt;/colgroup&gt;<br/>
+            &lt;tbody&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;Phone number&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;input type="text" class="gwt-TextBox required"&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;Message&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;textarea class="gwt-TextArea"&gt;&lt;/textarea&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td&gt;&lt;span id="errorMessageID" class="errorMessage"&gt;&nbsp;&lt;/span&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td&gt;<br/>
+           &lt;table&gt;<br/>
+            &lt;colgroup&gt;<br/>
+             &lt;col class="firstColumn"&gt;<br/>
+             &lt;col class="secondColumn"&gt;<br/>
+            &lt;/colgroup&gt;<br/>
+            &lt;tbody&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;Barcode size&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;select class="gwt-ListBox"&gt;&lt;option value="120"&gt;Small&lt;/option&gt;&lt;option value="230"&gt;Medium&lt;/option&gt;&lt;option value="350"&gt;Large&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;Error correction&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;select class="gwt-ListBox"&gt;&lt;option value="L"&gt;L&lt;/option&gt;&lt;option value="M"&gt;M&lt;/option&gt;&lt;option value="Q"&gt;Q&lt;/option&gt;&lt;option value="H"&gt;H&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;Character encoding&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;select class="gwt-ListBox"&gt;&lt;option value="UTF-8"&gt;UTF-8&lt;/option&gt;&lt;option value="ISO-8859-1"&gt;ISO-8859-1&lt;/option&gt;&lt;option value="Shift_JIS"&gt;Shift_JIS&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td&gt;<br/>
+           &lt;table&gt;<br/>
+            &lt;colgroup&gt;<br/>
+             &lt;col class="firstColumn"&gt;<br/>
+             &lt;col class="secondColumn"&gt;<br/>
+            &lt;/colgroup&gt;<br/>
+            &lt;tbody&gt;<br/>
+             &lt;tr&gt;<br/>
+              &lt;td class="firstColumn"&gt;&nbsp;&lt;/td&gt;<br/>
+              &lt;td class="secondColumn"&gt;&lt;button type="button" class="gwt-Button"&gt;Generate →&lt;/button&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+        &lt;/tbody&gt;<br/>
+       &lt;/table&gt;&lt;/td&gt;<br/>
+      &lt;td align="left" style="vertical-align: top;"&gt;<br/>
+       &lt;table cellspacing="0" cellpadding="0"&gt;<br/>
+        &lt;tbody&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="left" style="vertical-align: top;"&gt;<br/>
+           &lt;div id="imageresult"&gt;<br/>
+            &lt;div id="innerresult"&gt;<br/>
+             &lt;img src="https://zxing.org/w/chart?cht=qr&amp;chs=230x230&amp;chld=M&amp;choe=UTF-8&amp;chl=smsto%3A0812212151%3AThis+is+for+automation" class="gwt-Image" style=""&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="left" style="vertical-align: top;"&gt;<br/>
+           &lt;div class="gwt-HTML" id="downloadText" style=""&gt;<br/>
+            &lt;a href="https://zxing.org/w/chart?cht=qr&amp;chs=230x230&amp;chld=M&amp;choe=UTF-8&amp;chl=smsto%3A0812212151%3AThis+is+for+automation" id="downloadlink"&gt;Download&lt;/a&gt; or embed with this URL:<br/>
+           &lt;/div&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="left" style="vertical-align: top;"&gt;&lt;input type="text" class="gwt-TextBox" id="urlresult" style=""&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+         &lt;tr&gt;<br/>
+          &lt;td align="left" style="vertical-align: top;"&gt;&lt;textarea class="gwt-TextArea" id="rawtextresult" cols="50" rows="8" style=""&gt;&lt;/textarea&gt;&lt;/td&gt;<br/>
+         &lt;/tr&gt;<br/>
+        &lt;/tbody&gt;<br/>
+       &lt;/table&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+    &lt;/tbody&gt;<br/>
+   &lt;/table&gt;<br/>
+  &lt;/div&gt; <br/>
+  &lt;div id="footer"&gt; &lt;a href="https://github.com/zxing/zxing/"&gt;ZXing Project Home Page&lt;/a&gt; <br/>
+  &lt;/div&gt; &lt;iframe id="generator" tabindex="-1" style="position: absolute; width: 0px; height: 0px; border: none; left: -1000px; top: -1000px;"&gt;&lt;/iframe&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

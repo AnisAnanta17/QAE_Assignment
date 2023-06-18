@@ -1,0 +1,41 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="ja"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;title&gt;QR Decoder demo site&lt;/title&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body&gt; <br/>
+  &lt;form id="qrform"&gt; <br/>
+   &lt;div&gt; &lt;label for="qrcode"&gt;QR code image: &lt;/label&gt; <br/>
+    &lt;input type="file" name="qrcode" id="qrcode" accept=".png" required&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div&gt; &lt;button&gt;Submit&lt;/button&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/form&gt; <br/>
+  &lt;p&gt; &lt;span style="display: block;"&gt;Decoded:&lt;/span&gt; &lt;textarea id="decoded" rows="5" cols="60"&gt;&lt;/textarea&gt; &lt;/p&gt; <br/>
+  &lt;script&gt;<br/>
+        const form = document.getElementById('qrform');<br/>
+        form.addEventListener('submit', event =&gt; {<br/>
+            event.preventDefault();<br/>
+<br/>
+            const qrcodeImg = document.getElementById('qrcode').files[0];<br/>
+            const decodedArea = document.getElementById('decoded');<br/>
+<br/>
+            decodedArea.textContent = 'Now Loading...';<br/>
+<br/>
+            fetch('https://8vz3fjw7wh.execute-api.ap-northeast-1.amazonaws.com/Prod/', {<br/>
+                method: 'post',<br/>
+                mode: 'cors',<br/>
+                body: qrcodeImg<br/>
+            }).then(res =&gt; {<br/>
+                return res.json();<br/>
+            }).then(json =&gt; {<br/>
+                decodedArea.textContent = json.contents;<br/>
+            }).catch(err =&gt; {<br/>
+                console.log(err);<br/>
+            })<br/>
+        });<br/>
+<br/>
+    &lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
